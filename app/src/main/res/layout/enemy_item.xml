@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/enemies_list_item_background"
+        android:id="@+id/imageView5" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#0f0f0f"
+        android:src="@drawable/button_list_delete"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/imageButton17" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="77dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/textView_name_enemy" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:layout_alignBottom="@+id/textView_name_enemy"
+        android:layout_toRightOf="@+id/textView_name_enemy"
+        android:layout_toEndOf="@+id/textView_name_enemy"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:id="@+id/textView_num_enemy" />
+
+    <TextView
+        android:text="TextView"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_num_enemy"
+        android:layout_toRightOf="@+id/textView_num_enemy"
+        android:layout_toEndOf="@+id/textView_num_enemy"
+        android:id="@+id/textView_id_enemy" />
+
+
+</RelativeLayout>

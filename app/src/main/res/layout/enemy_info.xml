@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/enemies_list_header"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView8" />
+
+
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/enemies_list_item_background"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView9" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="430dp"
+        android:background="@drawable/enemy_detail_centre_background"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/imageView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView7"
+        android:textColor="#ff0000"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/textView_name1_enemy"
+        />
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_footer"
+        android:id="@+id/imageView10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:src="@drawable/button_friends"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/imageButton_etof"
+        android:layout_alignTop="@+id/imageView10" />
+
+    <ImageButton
+        android:src="@drawable/button_enemies_list"
+        android:background="#cc0000"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/button_list_enemy" />
+
+    <ImageButton
+        android:src="@drawable/button_enemies_list_edit"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageButton_etof"
+        android:layout_alignEnd="@+id/imageButton_etof"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/button_edit_enemy" />
+
+    <ImageButton
+        android:src="@drawable/button_list_delete"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignRight="@+id/button_edit_enemy"
+        android:layout_alignEnd="@+id/button_edit_enemy"
+        android:id="@+id/button_delete_enemy" />
+
+    <ImageButton
+        android:src="@drawable/button_radar"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:id="@+id/Button_radar_enemy"
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_delete_enemy"
+        android:layout_toRightOf="@+id/Button_radar_enemy"
+        android:layout_toEndOf="@+id/Button_radar_enemy"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView_num1_enemy" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_num1_enemy"
+        android:layout_toRightOf="@+id/textView_num1_enemy"
+        android:layout_toEndOf="@+id/textView_num1_enemy"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="65dp"
+        android:id="@+id/textView_jw_enemy" />
+
+    <TextView
+        android:text="21.3M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_jw_enemy"
+        android:layout_alignLeft="@+id/textView_num1_enemy"
+        android:layout_alignStart="@+id/textView_num1_enemy"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView_at_enemy" />
+
+    <TextView
+        android:text="5M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_at_enemy"
+        android:layout_toRightOf="@+id/textView_name1_enemy"
+        android:layout_toEndOf="@+id/textView_name1_enemy"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView_ac_enemy" />
+
+    <TextView
+        android:text="GUANGDONG CHINA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_ac_enemy"
+        android:layout_alignLeft="@+id/textView_jw_enemy"
+        android:layout_alignStart="@+id/textView_jw_enemy"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView_ad" />
+
+    <TextView
+        android:text="1''223"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_ad"
+        android:layout_alignLeft="@+id/button_delete_enemy"
+        android:layout_alignStart="@+id/button_delete_enemy"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textView_last" />
+
+    <TextView
+        android:text="6''312"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_alignRight="@+id/textView_last"
+        android:layout_alignEnd="@+id/textView_last"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="23dp"
+        android:id="@+id/textView_next" />
+
+</RelativeLayout>

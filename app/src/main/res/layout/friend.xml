@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.baidumap.MainActivity">
+
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/friends_list_header"
+        android:id="@+id/imageView"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView"
+        android:id="@+id/lv"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:src="@drawable/button_radar"
+        android:layout_alignTop="@+id/imageButton_ftoe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:id="@+id/button_RAZER" />
+
+    <ImageButton
+        android:src="@drawable/button_friends_list_edit"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/button_edit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_friends_list_add"
+        android:layout_alignParentTop="true"
+        android:id="@+id/button_add" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_enemies"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginTop="497dp"
+        android:id="@+id/imageButton_ftoe" />
+
+
+    />
+</RelativeLayout>

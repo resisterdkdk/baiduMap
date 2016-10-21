@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="#0f0f0f"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.baidumap.MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/centre_radar"
+        android:layout_above="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/home_header"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0f0f0f"
+        android:src="@drawable/button_enemies"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton_enemy_1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0f0f0f"
+        android:src="@drawable/button_refresh_on"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="35dp"
+        android:id="@+id/imageButton_send" />
+
+    <ImageButton
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0f0f0f"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignBottom="@+id/imageButton6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/imageButton7" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0f0f0f"
+        android:src="@drawable/button_locate_on"
+        android:layout_marginTop="40dp"
+        android:id="@+id/button_my"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignLeft="@+id/imageButton_send"
+        android:layout_alignStart="@+id/imageButton_send" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_friends"
+        android:id="@+id/imageButton_friend_1"
+        android:background="#0f0f0f"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/radar_header"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
